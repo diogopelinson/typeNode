@@ -1,0 +1,1 @@
+Contém as funções que processam as requisições antes que elas cheguem ao Controller

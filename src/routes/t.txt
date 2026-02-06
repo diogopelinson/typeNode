@@ -1,0 +1,1 @@
+Define os caminhos da url para os nossos endpoints da API

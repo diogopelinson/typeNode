@@ -1,0 +1,1 @@
+Contém as definições de schema do banco de dados e que represantam os tipos de dados
