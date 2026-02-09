@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import swaggerUi from 'swagger-ui-express';
 import swaggerSpec from './config/swagger';
 import authRoutes from './routes/authRoutes'
+import blogRoutes from './routes/blogRoutes'
 import { connectDB } from './config/database';
 import morgan from 'morgan';
 import cors from 'cors';
@@ -17,6 +18,7 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 //Isso indica ao express que qualquer requisição que comece com esse caminho é tratada pelo middleware subsequente
 app.use("/api/auth", authRoutes);
+app.use("/api/blogs", blogRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server is running on PORT at http://localhost:${PORT}`);
